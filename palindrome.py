@@ -1,8 +1,11 @@
 
 
-def palindrome():
-    word = str(input("Enter a word to see if it's a palindrome: "))
-    return
+def pal(input):
+    word = input.lower()
+    if (len(word) == 0):
+        raise ValueError
+    reverseWord = word[::-1]
+    if (reverseWord != word):
+        return False
+    return True
 
-
-palindrome()
